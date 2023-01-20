@@ -1,0 +1,48 @@
+<h1 mat-dialog-title>Add Product Form</h1>
+
+<div class="mat-dialog-content">
+    <form class="example-form" [formGroup]="productForm">
+        <mat-form-field appearance="outline">
+            <mat-label>Product Name</mat-label>
+            <input formControlName="productName" matInput placeholder="ProductName" value="">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Product category</mat-label>
+            <mat-select formControlName="category" placeholder="Category">
+                <mat-option value="Fruits">Fruits</mat-option>
+                <mat-option value="Fruits">Vegetable</mat-option>
+                <mat-option value="Fruits">Electronic</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Choose a date</mat-label>
+            <input formControlName="date" matInput [matDatepicker]="picker">
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker touchUi #picker></mat-datepicker>
+        </mat-form-field>
+        <label id="example-radio-group-label">Product Freshness</label>
+        <mat-radio-group formControlName="freshness" aria-labelledby="example-radio-group-label"
+            class="example-radio-group">
+            <mat-radio-button class="example-radio-button" *ngFor="let fresh of freshness" [value]="fresh">
+                {{fresh}}
+            </mat-radio-button>
+        </mat-radio-group>
+        <mat-form-field appearance="outline">
+            <mat-label>Price </mat-label>
+            <input formControlName="price" matInput placeholder="Price" value="" type="number">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Comment </mat-label>
+            <textarea formControlName="comment" matInput placeholder="Comment" value="" type="text"></textarea>
+        </mat-form-field>
+
+    </form>
+    <div mat-dialog-action [align]="'end'">
+        <button mat-raised-button color="warn" mat-dialog-close> Close</button>
+        <button mat-raised-button color="primary" type="submit" style=margin-left:8px; (click)="addProduct()">{{actionBtn}}
+        </button>
+    </div>
+
+
+
+</div>

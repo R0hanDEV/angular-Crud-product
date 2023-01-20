@@ -1,0 +1,59 @@
+{
+  "productList": [
+    {
+      "productName": "a",
+      "category": "Fruits",
+      "freshness": "Brand New",
+      "price": 53,
+      "comment": "35",
+      "date": "2023-01-15T18:30:00.000Z",
+      "id": 5
+    },
+    {
+      "productName": "43",
+      "category": "Fruits",
+      "freshness": "Refurbished",
+      "price": 43,
+      "comment": "43",
+      "date": "2023-01-15T18:30:00.000Z",
+      "id": 6
+    },
+    {
+      "productName": "4343",
+      "category": "Fruits",
+      "freshness": "Second New",
+      "price": 43,
+      "comment": "43",
+      "date": "2023-01-15T18:30:00.000Z",
+      "id": 7
+    },
+    {
+      "productName": "43",
+      "category": "Fruits",
+      "freshness": "Second New",
+      "price": 43,
+      "comment": "4343",
+      "date": "2023-01-15T18:30:00.000Z",
+      "id": 8
+    },
+    {
+      "productName": "43",
+      "category": "Fruits",
+      "freshness": "Second New",
+      "price": 4,
+      "comment": "3",
+      "date": "2023-01-22T18:30:00.000Z",
+      "id": 9
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
